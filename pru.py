@@ -44,7 +44,7 @@ t_DOT = r'\.'
 t_UPDATE = r':='
 
 def t_ID(t):
-	r'1-9[a-zA-Z_][a-zA-Z0-9_]*1-9'
+	r'[a-zA-Z_][a-zA-Z0-9_]*'
 	if t.value.upper() in tokens:
  		t.value = t.value.upper()
  		t.type = t.value
